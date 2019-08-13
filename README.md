@@ -1,3 +1,7 @@
+## Install 
+`implementation "com.benoitthore.backingfield:core:0.9.0"`
+
+
 ## Backing fields for Kotlin extension variables (Work In Progress)
 
 The BackingField delegates allows backing fields on classes without having to extend them by storing keys and values in a map with WeakReferences so it doesn't create memory leaks.
