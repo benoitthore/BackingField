@@ -12,7 +12,7 @@ class BackingField<K : Any, V> internal constructor(
 ) :
     ReadWriteProperty<K, V> {
 
-    internal constructor(default: K.() -> V) : this(onGcCallback = null, default = default)
+    constructor(default: K.() -> V) : this(onGcCallback = null, default = default)
 
     private val referenceQueue = ReferenceQueue<K>()
 
