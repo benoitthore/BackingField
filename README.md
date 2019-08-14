@@ -1,6 +1,6 @@
 ## Install
 
-`implementation "com.benoitthore.backingfield:core:0.9.1"`
+`implementation 'com.benoitthore.backingfield:core:0.9.1'`
 
 
 ## Backing fields for Kotlin extension variables (Work In Progress)
