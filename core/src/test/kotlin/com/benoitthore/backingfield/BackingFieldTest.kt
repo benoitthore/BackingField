@@ -102,3 +102,42 @@ class BackingFieldTest {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+var String.field by BackingField<String, Int> { 0 }
+
+
+fun main() {
+    val s = "123"
+    println(s.field)
+    s.field = 2
+    println(s.field)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
