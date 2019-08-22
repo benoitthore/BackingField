@@ -1,6 +1,6 @@
 ## Install
 
-`implementation "com.benoitthore.backingfield:core:0.9.1"`
+`implementation 'com.benoitthore.backingfield:core:0.9.1'`
 
 
 ## Backing fields for Kotlin extension variables (Work In Progress)
@@ -25,4 +25,4 @@ It can be used like so:
 Limitations :
 
 - This does not work on primitive types 
--  Not as performant as a extending the class and adding an extra property
+- Not as performant as a extending the class and adding an extra property
