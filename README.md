@@ -24,6 +24,5 @@ It can be used like so:
 
 Limitations :
 
-- Since it's using a `Map` to store the data, it can't store 2 objects if they're equal
 - This does not work on primitive types 
 - Not as performant as a extending the class and adding an extra property
