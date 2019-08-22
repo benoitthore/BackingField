@@ -102,35 +102,20 @@ class BackingFieldTest {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-var String.field by BackingField<String, Int> { 0 }
-
-
-fun main() {
-    val s = "123"
-    println(s.field)
-    s.field = 2
-    println(s.field)
-}
-
-
-
-
-
-
-
+//class SomeClass
+//
+//var SomeClass.extraValue : String by BackingField { "DefaultValue" }
+//
+//fun main() {
+//    val someInstance = SomeClass()
+//    val someOtherInstance = SomeClass()
+//
+//    someInstance.extraValue = "value1"
+//    someOtherInstance.extraValue = "value2"
+//
+//    println(someInstance.extraValue)
+//    println(someOtherInstance.extraValue)
+//}
 
 
 

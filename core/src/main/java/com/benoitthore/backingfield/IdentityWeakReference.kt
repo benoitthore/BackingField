@@ -20,12 +20,10 @@ class IdentityWeakReference<T> : WeakReference<T> {
     fun <T> refEquals(other: T?): Boolean = other == get()
 
     override fun equals(other: Any?): Boolean {
-        return (other as? WeakReference<T>)?.let { it.get() === get() } ?: false
+        return (other as? WeakReference<*>)?.let { it.get() === get() } ?: false
     }
 
-    override fun hashCode(): Int {
-        return hash
-    }
+    override fun hashCode() = hash
 
 
     private inline fun <T> T.generateHash(): Int = System.identityHashCode(this)

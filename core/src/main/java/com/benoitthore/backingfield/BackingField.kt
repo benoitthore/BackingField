@@ -27,7 +27,7 @@ class BackingField<K : Any, V> internal constructor(
         referenceMap[thisRef.toIdentity()] = value
     }
 
-    // TODO Refactor so this isn't needed (allocation on every get and set is bad)
+    // TODO Refactor so this isn't needed (allocating on every get and set is bad)
     fun K.toIdentity() = IdentityWeakReference(this, referenceQueue)
 
 }
