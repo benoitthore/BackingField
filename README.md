@@ -26,3 +26,7 @@ Limitations :
 
 - This does not work on primitive types 
 - Not as performant as a extending the class and adding an extra property
+
+## Warning
+
+This extension is far from being perfect, it allocates an object every time get/set is called. This could be avoided but the goal of this library is to provide an easy way of adding backing fields for testing and prototyping purposes so it probably won't be done in a while
