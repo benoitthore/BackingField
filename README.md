@@ -3,9 +3,9 @@
 `implementation 'com.benoitthore.backingfield:core:0.9.1'`
 
 
-## Backing fields for Kotlin extension variables (Work In Progress)
+## Backing fields for Kotlin extension variables 
 
-The BackingField delegates allows backing fields on classes without having to extend them by storing keys and values in a map with WeakReferences so it doesn't create memory leaks.
+The BackingField delegate allows backing fields on classes without having to extend them by storing keys and values in a map with WeakReferences so it doesn't create memory leaks.
 
 When creating a BackingField, a Thread is started and waits until the Garbage Collector kicks in. When this happens the map is cleared so it only keeps WeakReferences that are still holding on to a value.
 
@@ -29,4 +29,4 @@ Limitations :
 
 ## Warning
 
-This extension is far from being perfect, it allocates an object every time get/set is called. This could be avoided but the goal of this library is to provide an easy way of adding backing fields for testing and prototyping purposes so it probably won't be done in a while
+This extension is far from being perfect, it allocates an object every time get/set is called. The goal of this library is to provide an easy way of adding backing fields for **testing, debugging and prototyping purposes only**
